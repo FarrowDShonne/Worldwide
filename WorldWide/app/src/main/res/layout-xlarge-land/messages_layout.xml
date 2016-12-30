@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/contactImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/coolguy" />
+
+
+    <ImageView
+        android:id="@+id/borderImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/contactborderimage" />
+
+    <TextView
+        android:id="@+id/contactNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textColor="#000"
+        android:layout_alignTop="@+id/contactImageView"
+        android:layout_toRightOf="@+id/contactImageView"
+        android:layout_toEndOf="@+id/contactImageView"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whats Up?"
+        android:layout_below="@+id/contactNameTextView"
+        android:layout_alignLeft="@+id/contactNameTextView"
+        android:layout_alignStart="@+id/contactNameTextView"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>

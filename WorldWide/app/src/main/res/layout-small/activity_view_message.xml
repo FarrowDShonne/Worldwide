@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Messaging.ViewMessageActivity">
+
+    <EditText
+        android:id="@+id/messageInputTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/sendTextImageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/sendbutton"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:background="#FFF"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_alignBottom="@+id/messageInputTextView"
+        android:layout_toRightOf="@+id/messageInputTextView"
+        android:layout_toEndOf="@+id/messageInputTextView" />
+
+    <ImageButton
+        android:id="@+id/otherTextOptionsImageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:background="#ff0000"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_alignBottom="@+id/messageInputTextView"
+        android:layout_toLeftOf="@+id/messageInputTextView"
+        android:layout_toStartOf="@+id/messageInputTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Unknown"
+        android:textSize="10sp"
+        android:id="@+id/contactNameTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
